@@ -60,8 +60,8 @@ function travel() {
             />
             Veg
           </label>
+        
           {errors.mealOption && <p>{errors.mealOption.message}</p>}
-
           <label htmlFor="nonVeg">
             <input
               type="radio"
@@ -72,7 +72,6 @@ function travel() {
             Non-Veg
           </label>
           {errors.mealOption && <p>{errors.mealOption.message}</p>}
-
           <label htmlFor="vegan">
             <input
               type="radio"
