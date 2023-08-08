@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.radio-group,
+.check-group {
+  display: flex;
+  gap: 10px; /* Adjust the spacing between radio buttons and labels */
+}
+
+.radio-group label,
+.check-group label {
+  display: flex;
+  align-items: center;
+}
