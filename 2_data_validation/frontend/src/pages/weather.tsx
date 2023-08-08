@@ -41,7 +41,7 @@ function weather() {
     };
     getWeather();
   }, []);
-  console.log(weather);
+  //console.log(weather);
   return (
     <div>
       <h1>helo</h1>
