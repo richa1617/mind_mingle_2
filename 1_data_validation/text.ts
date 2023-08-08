@@ -1,9 +1,9 @@
 import { z } from "zod";
 
-const Email = z.string().email();
+const email = z.string().email();
 
 const emialArray = z.string().email().array();
-console.log(emialArray);
+// console.log(emialArray);
 
 const passwrod = z.string().min(8).includes("#");
 
@@ -61,16 +61,16 @@ const faultyUserInput = {
 
 const correct = Tweet.safeParse(correctUserInput);
 
-if (correct.success) {
-  console.log(correct.data);
-} else {
-  console.log(correct.error.flatten());
-}
+// if (correct.success) {
+//   console.log(correct.data);
+// } else {
+//   console.log(correct.error.flatten());
+// }
 
 const faultyParsed = Tweet.safeParse(faultyUserInput);
 
 if (faultyParsed.success) {
   console.log("SUCCES", faultyParsed.data);
 } else {
-  console.log("ERRORS", faultyParsed.error.flatten());
+  console.log(faultyParsed.error.flatten().fieldErrors.username);
 }
