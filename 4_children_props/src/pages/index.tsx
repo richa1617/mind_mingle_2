@@ -1,5 +1,7 @@
 import Card from "@/components/Card";
 import Tabbed from "@/components/Tabbed";
+import Accordion from "@/components/Accordion";
+
 export default function Home() {
   return (
     <>
@@ -10,9 +12,19 @@ export default function Home() {
       <Card color="yellow" backgroundColor="green">
         <h1>Bar</h1>
       </Card> */}
-      <Tabbed>
+      {/* <Tabbed>
         <p>You can toggle this</p>
-      </Tabbed>
+      </Tabbed> */}
+
+      <Accordion title="item 1">
+        <p>Description about item 1</p>
+      </Accordion>
+      <Accordion title="item 2">
+        <p>Description about item 2</p>
+      </Accordion>
+      <Accordion title="item 3">
+        <p>Description about item 3</p>
+      </Accordion>
     </>
   );
 }
