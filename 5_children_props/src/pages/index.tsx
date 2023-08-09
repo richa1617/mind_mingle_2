@@ -4,8 +4,11 @@ import PageLayout from "@/components/PageLayout";
 import Solution from "@/components/Solution";
 import CustomDiv from "@/components/CustomDiv";
 import CustomImg from "@/components/CustomImg";
+import CustomInput from "@/components/CustomInput";
+import { useState } from "react";
 
 export default function Home() {
+  const [name, setName] = useState<string>("");
   return (
     <>
       <PageLayout>
@@ -38,10 +41,15 @@ export default function Home() {
         src="https://img.freepik.com/free-vector/hand-drawn-collage-design_23-2149543516.jpg?w=900&t=st=1691584361~exp=1691584961~hmac=63f59840598b413f4ca29f346e9ab403ad9e1945624de3fbd3f7a8124381fda0"
       ></CustomImg>
 
-      <CustomImg
+      {/* <CustomImg
         shape="circle"
         src="https://img.freepik.com/free-vector/hand-drawn-collage-design_23-2149543516.jpg?w=900&t=st=1691584361~exp=1691584961~hmac=63f59840598b413f4ca29f346e9ab403ad9e1945624de3fbd3f7a8124381fda0"
-      ></CustomImg>
+      ></CustomImg> */}
+
+      <CustomInput
+        value={name}
+        onChange={(e) => setName(e.currentTarget.value)}
+      />
     </>
   );
 }
