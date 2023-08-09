@@ -8,7 +8,7 @@ interface CustomButtonProps {
 }
 
 function Button(props: CustomButtonProps) {
-  const variantClass = `.btn ${props.variant}`;
+  const variantClass = `btn ${props.variant}`;
 
   return <button className={variantClass}>{props.children}</button>;
 }

@@ -39,3 +39,40 @@
   border-color: red;
   color: white;
 }
+
+.container {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  margin: 20px;
+}
+
+.success {
+  border: 2px solid green;
+  color: white;
+  background-color: rgb(158, 174, 158);
+}
+.warning {
+  border: 2px solid orange;
+  color: white;
+  background-color: hsl(40, 55%, 70%);
+}
+
+.error {
+  border: 2px solid red;
+  color: white;
+  background-color: rgb(175, 133, 133);
+}
+
+.img-container {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+}
+.square {
+  border-radius: 5px;
+}
+
+.circle {
+  border-radius: 50%;
+}
