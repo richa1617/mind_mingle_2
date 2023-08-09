@@ -76,3 +76,10 @@
 .circle {
   border-radius: 50%;
 }
+
+.dark {
+  background-color: black;
+}
+.nav.dark a {
+  color: white;
+}
