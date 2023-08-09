@@ -1,7 +1,11 @@
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import PageLayout from "@/components/PageLayout";
+
 export default function Home() {
   return (
-    <>
-      <h1>Helo</h1>
-    </>
+    <PageLayout>
+      <h1>Home page</h1>
+    </PageLayout>
   );
 }

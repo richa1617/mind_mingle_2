@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  border: 1px solid black;
+  width: 95vw;
+}
