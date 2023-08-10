@@ -39,3 +39,10 @@
   border-color: red;
   color: white;
 }
+
+.accordion {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}

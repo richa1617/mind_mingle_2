@@ -11,7 +11,6 @@ function PageLayout(props: pageLayoutProps) {
     <>
       <Navbar />
       {props.children}
-      <Footer />
     </>
   );
 }

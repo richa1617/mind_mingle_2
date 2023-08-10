@@ -1,8 +1,11 @@
 import Modal from "@/Components/Modal";
 import PageLayout from "@/Components/PageLayout";
 import CustomButton from "@/Components/CustomButton";
+import AccordionContainer from "@/Components/AccordionContainer";
+import { useState } from "react";
 
 export default function Home() {
+  const [text, setText] = useState<string>("");
   return (
     <>
       <PageLayout>
@@ -12,9 +15,11 @@ export default function Home() {
         <h1>Hello</h1>
         <p>I am content</p>
       </Modal>
-      <CustomButton>
-        Primary Button
+      <h2>{text}</h2>
+      <CustomButton variant="secondary" anything={() => setText("hello")}>
+        Button
       </CustomButton>
+      <AccordionContainer />
     </>
   );
 }
