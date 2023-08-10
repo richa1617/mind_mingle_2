@@ -5,8 +5,9 @@ test("adding item to end of array", () => {
   const itemToAdd = 4;
 
   const updatedArray = appendToArray(originalArray, itemToAdd);
+  const lastItem = updatedArray[updatedArray.length - 1];
 
-  expect(updatedArray).toContain(itemToAdd);
+  expect(lastItem).toBe(itemToAdd);
 });
 
 test("filterOutOddNumbers function filters out odd numbers from an array", () => {

@@ -1,26 +1,34 @@
 To Install react :
 
-npx create-next-app@latest frontend --import-alias "@/*" --no-app --typescript --no-tailwind --eslint --src-dir
+npx create-next-app@latest 7_react_architecture --import-alias "@/*" --no-app --typescript --no-tailwind --eslint --src-dir
+
+
 
 To use link in next.js :
 import Link from 'next/link';
 
 Install axios :npm i axios
+To install zod :npm install zod
+Zod for react  form : npm install @hookform/resolvers
+
+//to install form:
+npm install react-hook-form
+
+
+
 
 Common imports:
 import axios from "axios";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
 
-//Fetch request in useffect
-const [recipes, setRecipes] = useState<null | Recipe[]>(null);
-useEffect(() => {
-const fetchRecipeData = async () => {
-const response = await axios.get("http://localhost:3000/recipe");
-setRecipes(response.data);
-};
-fetchRecipeData();
-}, []);
+
+//Common imports for forms with zod :
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+
 
 Inline buutton with
 <button onClick={() => clickHandler()}>{e}</button>
@@ -45,3 +53,5 @@ className={activeButton === e ? "active" : ""}
 
 //to pass event object :
 <button onClick={(event) => knowMoreHandler(event)}>Know more</button>
+
+
